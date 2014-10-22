@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>考试系统主页</title>
+    <title>考试题目</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,14 +30,20 @@
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/hai_tips.css" rel="stylesheet">
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+ <style type="text/css" media="screen">
+     body{
+        background-color:#fff;
+     }
+     input{
+        width: 80px;
+     }
+ </style>
 </head>
 
 <body> 
@@ -49,7 +55,7 @@
                     <span class="sr-only">顶部导航栏按钮</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
                 </button>
                 <a class="navbar-brand" href="index.html"><img src="css/logo.jpg"  style="width:10%;" alt=""> 考试系统</a>
             </div>
@@ -58,7 +64,7 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-envelope fa-fw"></i>  文件<i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
                         <li>
@@ -109,7 +115,7 @@
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-tasks fa-fw"></i>基础设置  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-tasks">
                         <li>
@@ -188,7 +194,7 @@
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-bell fa-fw"></i>总账<i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
                         <li>
@@ -239,7 +245,7 @@
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-user fa-fw"></i> 往来 <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> 个人设置</a>
@@ -252,139 +258,159 @@
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
+                 <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> 现金 <i class="fa fa-caret-down"></i>
+                    </a> 
+                    <!-- /.dropdown-user -->
+                 </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> 项目</a> 
+                    <!-- /.dropdown-user -->
+                 </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> 财务报表</a> 
+                    <!-- /.dropdown-user -->
+                 </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>工资</a> 
+                    <!-- /.dropdown-user -->
+                 </li>
                 <!-- /.dropdown -->
             </ul>
-            <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="搜索...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
-                        <li>
-                            <a class="active" href="index.html"><i class="fa fa-dashboard fa-fw"></i> 主页</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 单选题<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">初级</a>
-                                </li>
-                                <li>
-                                    <a href="#">模拟考试</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-table fa-fw"></i> 多选题</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-edit fa-fw"></i> 判断题</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> 实务操作题</a> 
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> 总账</a> 
-                        </li>
-                       <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> 采购</a> 
-                        </li>
-                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> 销售</a> 
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 工资<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">工资变动</a>
-                                </li>
-                                <li>
-                                    <a href="#">工资分钱清单</a>
-                                </li>
-                                  <li>
-                                    <a href="#">扣税</a>
-                                </li>
-                                <li>
-                                    <a href="#">银行代发</a>
-                                </li>
-                                <li>
-                                    <a href="#">工资分摊</a>
-                                </li>
-                                <li>
-                                    <a href="#">月末处理</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                       <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> 库存</a> 
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
+            <!-- /.navbar-top-links --> 
             <!-- /.navbar-static-side -->
         </nav>
         <!-- 头部end -->
 
-        <div id="page-wrapper"> 
-          
-            <!-- /.row -->
+        <div id="page-wrapper">  
             <div class="row">
-              <div class="col-lg-6">
+                <div class="col-lg-12">  
+                    <!-- .panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           题目（单选题）
+                            <i class="fa fa-clock-o fa-fw"></i> 2014-10-23 00:47:47
                         </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                             
-                            <div class="alert alert-info">
-                               计算工资总和，并求出相应值。听说iphone 6比较难抢，今天去试了一下,现在派出所笔录了
+                        <div class="">
+                         <div class="col-lg-12">
+                               <div class=""> 
+                                    <p>                   
+                                        <button type="button" class="btn btn-info">打印</button>
+                                         <button type="button" class="btn btn-info">预览</button>
+                                          <button type="button" class="btn btn-info">输出</button>
+                                           <button type="button" class="btn btn-info">设置</button>
+                                            <button type="button" class="btn btn-info">替换</button>
+                                             <button type="button" class="btn btn-info">定位</button>
+                                              <button type="button" class="btn btn-info">筛选</button>
+                                              <button type="button" class="btn btn-info">计算</button> 
+                                              <button type="button" class="btn btn-info">汇总</button> 
+                                              <button type="button" class="btn btn-info">帮助</button>
 
-                            </div> 
-                            <p> 
-                                仔细检查后，可提交答案 
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">A</button>
-                                 <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">B</button>
-                                 <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">C</button>
-                                 <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">D</button>
-                            </p> 
+                                    </p> 
+                               </div>
+                           </div>
+                         </div>
+                         <!-- .panelbody -->
+                       <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>人员编码</th>
+                                            <th>姓名</th>
+                                            <th>部门</th>
+                                            <th>应发合计</th>
+                                            <th>扣款合计</th> 
+                                            <th>实发合计</th>   
+                                            <th>合计</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td>123</td>
+                                            <td>李晓明</td>
+                                            <td>销售部</td>
+                                            <td class="center"><input type="text" name="Total2" value="8540" placeholder="总计"></td>
+                                            <td class="center"><input type="text" name="Total7" value="" placeholder="扣款合计"></td> 
+                                            <td class="center">8540</td>
+                                            <td class="center">9511</td>
+                                        </tr>
+                                           <tr class="odd gradeX">
+                                            <td>123</td>
+                                            <td>李晓明2</td>
+                                            <td>销售部</td>
+                                            <td class="center"><input type="text" name="Total3" value="8540" placeholder="总计"></td>
+                                            <td class="center"><input type="text" name="Total7" value="" placeholder="扣款合计"></td> 
+                                            <td class="center">8540</td>
+                                            <td class="center">9511</td>
+                                            
+                                        </tr>
+                                            <tr class="odd gradeX">
+                                            <td>123</td>
+                                            <td>李晓明3</td>
+                                            <td>销售部</td>
+                                            <td class="center"><input type="text" name="Total4" value="8540" placeholder="总计"></td> 
+                                            <td class="center"><input type="text" name="Total7" value="" placeholder="扣款合计"></td> 
+                                            <td class="center">232</td>
+                                            <td class="center">9511</td>
+                                        </tr>
+                                           <tr class="odd gradeX">
+                                            <td>123</td>
+                                            <td>李晓明3</td>
+                                            <td>销售部</td>
+                                            <td class="center"><input type="text" name="Total5" value="8540" placeholder="总计"></td>
+                                            <td class="center"><input type="text" name="Total7" value="" placeholder="扣款合计"></td> 
+                                            <td class="center">43441</td>
+                                            <td class="center">9511</td> 
+                                        </tr>
+                                         <tr class="odd gradeX">
+                                            <td>123</td>
+                                            <td>李晓明4</td>
+                                            <td>销售部</td>
+                                            <td class="center"><input type="text" name="Total6" value="8540" placeholder="总计"></td> 
+                                            <td class="center"><input type="text" name="Total7" value="" placeholder="扣款合计"></td> 
+                                            <td class="center">1203</td>
+                                            <td class="center">9511</td>
+                                        </tr>  
+                                        <tr class="odd gradeX">
+                                            <td>123</td>
+                                            <td>李晓明5</td>
+                                            <td>销售部</td>
+                                            <td class="center"><input type="text" name="Tota11" value="" placeholder="总计"></td> 
+
+                                            <td class="center"><input type="text" name="Total2" value="" placeholder="扣款合计"></td> 
+                                            <td class="center"><input type="text" name="salary" value="" placeholder="应发"> </td>
+                                            <td class="center"><input type="text" name="money" value="" placeholder="实发"></td>
+                                        </tr>
+                                           <tr class="odd gradeX">
+                                            <td>123</td>
+                                            <td>李晓明6</td>
+                                            <td>销售部</td>
+                                            <td class="center"><input type="text" name="Total8" value="8540" placeholder="总计"></td>
+                                            <td class="center"><input type="text" name="Total7" value="" placeholder="扣款合计"></td> 
+
+                                            <td class="center">8540</td>
+                                            <td class="center">9511</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            <div class="well">
+                                <h4>提示</h4>
+                                <p>仔细检查后，可提交答案</p>
+                                <a class="btn btn-success  btn-lg btn-block"  id="endexam">提交答案</a>
+                            </div>
                         </div>
-                        <!-- .panel-body -->
-                    </div>
-                    <!-- /.panel -->
+                        <!-- /.panel-body -->            
+                     </div>
+                    <!-- /.panel .chat-panel -->
                 </div>
-                 <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           题目操作
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <button type="button" class="btn btn-outline btn-primary btn-lg btn-block btn-success" id="pfen">上一题</button>
-                            <button type="button" class="btn btn-outline btn-primary btn-lg btn-block btn-success" id="pfen">下一题</button>  
-                            <a href="exam.html" > <button type="button" class="btn btn-outline btn-primary btn-lg btn-block">去做题 </button></a>
-                             <button type="button" class="btn btn-outline btn-primary btn-lg btn-block btn-success" id="pfen">评分（当前）</button>
-                   
-                        </div>
-                        <!-- .panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
+                <!-- /.col-lg-4 -->
             </div>
             <!-- /.row -->
         </div>
@@ -392,6 +418,7 @@
 
     </div>
     <!-- /#wrapper -->
+
 <!-- 弹出层消息 -->
 
     <div style="display:none">
@@ -399,10 +426,10 @@
         <div id="msgdata"  >
             <div class="timeline-panel">
                 <div class="timeline-heading">
-                    <h4 class="timeline-title"> 答案</h4> 
+                    <h4 class="timeline-title"> 提交答案</h4> 
                 </div>
                 <div class="timeline-body">
-                    <p>恭喜您，回答正确</p>
+                    <p>你真的要提交答案吗？</p>
                 </div>
             </div>
 
@@ -410,6 +437,7 @@
         </div>
     </div>  
 <!-- end -->
+
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
 
@@ -417,34 +445,78 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="js/plugins/metisMenu/metisMenu.min.js"></script> 
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- 图标统计 JavaScript
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script> -->
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/sb-admin-2.js"></script>
-    <script src="js/haiTips.js"></script> 
+    <script src="js/sb-admin-2.js"></script> 
+     <script src="js/haiTips.js"></script>
     <script src="js/jquery.cookie.js"></script>
-    <script type="text/javascript"> 
-    $(function(){ 
-     
-        $("#pfen").click(function(){
-            if ( $.cookie("majinyun")=="yes122") {
+   
+    <script type="text/javascript">
+    $(function() {
+        var userAns = false; 
+        $("#endexam").click(function() {
+                $("#dataTables-example").find("input[type='text']").each(function() {
+                        if ($(this).val() != "") {
+                                userAns = true;
+                        } else {
+                                userAns = false;
+                        }
+                        return userAns;
+                });
+
+                if (userAns) {
                         $.hai_tips({
-                            content: $('#msgdata'),
-                            opacity: false,
-                            ok: function() {  
+                                content: $('#msgdata'),
+                                opacity: true,
+                                ok: function() { 
+                                      //$.cookie("majinyun", "yes", { expires: 14 }); // 存储一个带14天期限的 cookie
+                                        alert("现在返回首页查看答案");
                                 },
                                 cancel: function() {}
-                        }); 
-               };
+                        });
+                } else {
+                        $.hai_tips({
+                                content: "您还未完成题目，请仔细检查",
+                                opacity: false,
+                                ok: function() {}
+                        });
+                }
         })
-               
+
+        //-----------------只能输入数字--------------------
+        $("#dataTables-example").find("input[type='text']").each(function() {
+                enforceNum($(this));
+        });
+
+        //-----------------自动求和--------------------
+        $("input[name='salary']").bind("keyup blur",
+        function() {
+                $("input[name='Tota11']").val(parseInt($("input[name='salary']").val()) + parseInt($("input[name='money']").val()));
+        });
+
+        $("input[name='money']").bind("keyup blur",
+        function() {
+                $("input[name='Tota11']").val(parseInt($("input[name='salary']").val()) + parseInt($("input[name='money']").val()));
+        });
     });
 
-    /*---------------------------------*/ 
-    // window.open('exam.html', '', 'resizable=1, menuBar=0, toolBar=0, scrollbars=yes, Status=yes, resizable=1');
+    function enforceNum(_node) {
+            _node.bind("keyup blur",
+            function() {
+                    $(_node).val($(_node).val().replace(/[^0-9-]+/, ''));
+                    return;
+            });
+    }
 
+      opener.window.document.getElementById("msgdata").innerHTML="majinyun231";  
+   
     </script>
-
 </body>
 
 </html>
